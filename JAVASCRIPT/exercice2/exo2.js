@@ -9,7 +9,7 @@ b = b - 1;
 document.write(b + '<br/>');
 document.write(c + '<br/>');
 var c;
-c = c + a;
+c = parseInt(c) + parseInt(a);
 document.write(c + '<br/>');
 document.write(d + '<br/>');
 var d;
