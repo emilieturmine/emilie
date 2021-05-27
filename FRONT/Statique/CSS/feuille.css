@@ -121,12 +121,15 @@ li {
 }
 
 @media screen and (max-width:768px) {
-    /*style a appliquer en dessous d'une largeur de 768 px*/
+    /*style a appliquer en dessous d'une largeur de 768 px, 
+    objectif changer la taille de l'ecriture changer les menus et faire disparaitre la colonne*/
     aside {
         display: none;
+        /*La colonne disparait */
     }
     .conteneur {
         width: screen;
+        /* s'adapte a la taille de l'ecran*/
     }
     .entete {
         width: 100%;
