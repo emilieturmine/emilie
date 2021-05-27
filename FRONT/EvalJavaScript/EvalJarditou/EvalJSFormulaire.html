@@ -1,8 +1,9 @@
 <!DOCTYPE html>
- <!--indique au navigateur web la version du langage(code) de balisage utilisé sur cette page-->
+<!--indique au navigateur web la version du langage(code) de balisage utilisé sur cette page-->
 <html lang="fr">
 <!--indique le langage(courant) utilisé-->
-<head> 
+
+<head>
     <!--non visible par l'utilisateur ,la partie head fournit des informations générales sur le document comme son titre, les liens vers les feuilles de styles utilisées etc...-->
     <meta charset="utf-8">
     <!--declare le type d'encodage souhaité pour le document html-->
@@ -10,22 +11,21 @@
     <!--texte non visible dans le navigateur mmais qui sera reris dans les resultats de recherche du moteur.-->
     <title>Accueil</title>
     <!--titre de la page, il sera visible sur l'onglet.-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--pour importer bootstrap sur la page html-->
-    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--pour importer bootstrap sur la page html-->
+</head>
 <!--fin de la balise head-->
+
 <body>
     <!--indique au navigateur ou commence le corps de page (partie visible) et ou il se termine-->
     <div class="container-fluid">
         <!--permet de definir un conteneur de taille fluide cad un conteneur dont la taille va changer en mm temps que celle de la fenetre-->
         <header>
- <!--partie haute du document-->
+            <!--partie haute du document-->
             <div class="row">
                 <!--commande du bootstrap pour transformer à partir de 960px-->
                 <div id="logo" class="col-lg-8 d-none d-lg-block">
-                    <img class="col-lg-8 d-none d-lg-block" src="logojarditou.jpg " alt="logo jarditou "
-                        title="logo jarditou " style="width: 150px;height:50px ">
+                    <img class="col-lg-8 d-none d-lg-block" src="image/logojarditou.jpg " alt="logo jarditou " title="logo jarditou " style="width: 150px;height:50px ">
                 </div>
                 <div id="slogan " class="col-lg-4 d-none d-lg-block ">
 
@@ -34,10 +34,9 @@
             </div>
 
         </header>
-         <!--création d'une liste pour faciliter la navigation entre les pages ,faire pour qu'elle disparaisse si la largeur de la page est reduite-->
+        <!--création d'une liste pour faciliter la navigation entre les pages ,faire pour qu'elle disparaisse si la largeur de la page est reduite-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">Jarditou.com</a>
@@ -62,13 +61,13 @@
                 </form>
             </div>
         </nav>
-        <img src="promotion.jpg " class="w-100" alt="promotion en cours" title="promotion en cours">
+        <img src="image/promotion.jpg " class="w-100" alt="promotion en cours" title="promotion en cours">
         <section>
             <p> *Ces zones sont obligatoires</p>
             <!--Debut du formulaire-->
-            <form id="form" name="form" method="POST" class="form-group" action="http://bienvu.net/script.php"
-                onsubmit=" return (envoi());">
-                <fieldset><!--creation d'un groupe de champs-->
+            <form id="form" name="form" method="POST" class="form-group" action="http://bienvu.net/script.php" onsubmit=" return (envoi());">
+                <fieldset>
+                    <!--creation d'un groupe de champs-->
                     <legend>
                         <!--titre du formulaire-->
                         <h1>Vos coordonnées</h1>
@@ -79,22 +78,15 @@
                     <span id="ErreurNom"></span>
                     <br />
                     <label for="prenom">Prénom*</label>
-                    <input class="form-control" type="text" name="Prénom" id="Prenom" title="Entrez votre prénom."
-                        required />
+                    <input class="form-control" type="text" name="Prénom" id="Prenom" title="Entrez votre prénom." required />
                     <span id="ErreurPrenom"></span>
                     <br />
                     <br />
                     <!--création d'un champs avec boutons radio-->
-                    <label for="sexe"id="Sexe">Sexe*</label>
-                    <input type="radio" name="Sexe" id="femme" value="Féminin" title="Veuillez cocher votre sexe."
-                        required />
-                    Féminin
-                    <input type="radio" name="Sexe" id="homme" value="Masculin" title="Veuillez cocher votre sexe."
-                        required />
-                    Masculin
-                    <input type="radio" name="Sexe" id="neutre" value="Neutre" title="Veuillez cocher votre sexe."
-                        required />
-                    Neutre
+                    <label for="sexe" id="Sexe">Sexe*</label>
+                    <input type="radio" name="Sexe" id="femme" value="Féminin" title="Veuillez cocher votre sexe." required /> Féminin
+                    <input type="radio" name="Sexe" id="homme" value="Masculin" title="Veuillez cocher votre sexe." required /> Masculin
+                    <input type="radio" name="Sexe" id="neutre" value="Neutre" title="Veuillez cocher votre sexe." required /> Neutre
                     <span id="ErreurSexe"></span>
                     <br />
                     <br />
@@ -113,8 +105,7 @@
                     <input class="form-control" type="text" name="Ville" id="Ville" />
                     <br />
                     <label for="email">Email*</label>
-                    <input class="form-control" type="email" name="Email" id="Email" required
-                        title="Entrez votre email." placeholder="dave.loper@afpa.fr" />
+                    <input class="form-control" type="email" name="Email" id="Email" required title="Entrez votre email." placeholder="dave.loper@afpa.fr" />
                     <span id="ErreurEmail"></span>
                     <br />
                     <br />
@@ -140,15 +131,13 @@
                     <br />
                     <!--zone de saisie multi-lignes-->
                     <label for="question">Votre question*</label>
-                    <textarea class="form-control" name="Question" id="Question" rows="2" cols="25" required
-                        title="Posez votre question ici."></textarea>
+                    <textarea class="form-control" name="Question" id="Question" rows="2" cols="25" required title="Posez votre question ici."></textarea>
                     <span id="ErreurQuestion"></span>
                     <br />
                 </fieldset>
                 <br />
                 <label for="Accord"></label>
-                <input type="checkbox" name="Accord" id="Accord" />
-                * J'accepte le traitement informatique de ce formulaire
+                <input type="checkbox" name="Accord" id="Accord" /> * J'accepte le traitement informatique de ce formulaire
                 <br />
                 <span id="ErreurAccord"></span>
                 <br />
@@ -162,7 +151,8 @@
                 </button>
             </form>
         </section>
-        <footer><!--debut du pied de page-->
+        <footer>
+            <!--debut du pied de page-->
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -180,18 +170,14 @@
                 </div>
         </footer>
         </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
-        crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
-        crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
-        crossorigin="anonymous "></script>
-    <script src="EvalJSFormulaire.js"></script>
-    <!--permet d'integrer la feuille externe de java script,on l'applique àvant la fermeture de la balise body et non dans head pour optimiser l'ergonomie de la page web-->
-</body><!--fin de la balise body-->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+        <script src="EvalJSFormulaire.js"></script>
+        <!--permet d'integrer la feuille externe de java script,on l'applique àvant la fermeture de la balise body et non dans head pour optimiser l'ergonomie de la page web-->
+</body>
+<!--fin de la balise body-->
 
-</html><!--fin de la balise html-->
+</html>
+<!--fin de la balise html-->
