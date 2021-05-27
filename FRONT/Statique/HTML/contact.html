@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Pour plus de détails sur le travail HTML ,commencer par la page accueil-->
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Accueil,tableau comparatif et formulaire de contact jarditou">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <img src="image/logojarditou.jpg" alt="logo jarditou" title="logo jarditou" style="width: 350px;height:100px">
+    </header>
+    <nav>
+        <p>La qualité depuis 70 ans</p>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="image/promotion.jpg" alt="promotion en cours" title="promotion en cours">
+    <h1>Contact</h1>
+    <hr>
+    <section>
+
+        <p> *Ces zones sont obligatoires</p>
+
+        <form action="http://bienvu.net/script.php" method="post">
+            <!--Déclaration d'un formulaire,
+                action (Indique le nom (chemin/url) du fichier qui sera exécuté lors de l'envoi du formulaire,
+                method="post"(les données saisies dans le formulaire n'apparaissent pas dans l'url.)  -->
+            <fieldset>
+                <!--Pour creer des groupes de champs -->
+                <legend>Vos coordonnées</legend>
+                <!--obligatoire apres fieldset,sert de titre au regrougement-->
+                <label for="Nom">Votre nom*: </label>
+                <!--indique a l'internaute quelle est l'information a saisir dans le champ,
+                for( associe l'etiquette label au champ de formulaire souhaite-->
+                <input type="text" name="Nom" id="Nom" required>
+                <!--creer un champ de saisie ,
+                type(Le type de champ. Les valeurs possibles (text, radio...) pour cet attribut sont évoquées ci-après),
+                name(Nom de la donnée. C’est le nom sous lequel l’information saisie ici sera connue et récupérée dans le script serveur déclenché par le formulaire.)
+                id (la valeur doit correspondre avec celle du for de la balise label pour que l'association fonctionne.)
+                required( indique que remplir le champ est obligatoire pour que le formulaire soit validé)-->
+                <br>
+                <label for="prenom">Votre prénom*: </label><input type="text" name="Prenom" id="prenom" required><br>
+                <br>
+                <label for="sexe">Sexe*: </label><input type="radio" name="sexe" value="Feminin">Féminin<input type="radio" name="sexe" value="Masculin" required>Masculin<br>
+                <!-- type ="radio" affiche le champs de saisie sous formes de rond a cocher ,
+                name(Nom de la donnée. C'est le nom sous lequel l'information saisie ici sera connue et récupérée dans le script serveur déclenché par le formulaire.
+                Les boutons radio doivent avoir le même nom)
+                value(Libelle correspondant à l'option choisie.)-->
+                <br>
+                <label for="date">Date de naissance*: </label><input type="date" name="ddn" id="Date" required><br>
+                <!--type="date" pour que s'affiche un calendrier-->
+                <label for="codePostal">Code postal*: </label><input type="text" name="codepostal" id="Codepostal" required><br>
+                <label for="adresse">Adresse: </label><input type="text" name="Adresse" id="Adresse"><br>
+                <label for="ville">Ville: </label><input type="text" name="Ville" id="Ville"><br>
+                <label for="email">Email*: </label><input type="email" name="Email" id="Email" value="dave.loper@afpa.fr" required>
+                <!-- ajout d'un attribut value pour afficher un texte par défaut dans le champ de saisie-->
+            </fieldset>
+            <!--fin du premier regroupement de champs--><br>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="Sujet"> Sujet*: </label>
+                <!--select(Permet de creer une liste de choix possible,
+                    option(defini chaque choix offert a l'internaute),
+                    value(Nom de la donnée pour l'option correspondante. Permet de spécifier une valeur différente de celle affichée à l'internaute).
+                    selected (Determine le choix par defaut)-->
+                <select name="Sujet" id="Sujet" required>
+    <option value="Veuillez selectionner un sujet" selected >Veuillez selectionner un sujet</option>
+    <option value="Mes commandes">Mes commandes</option>
+    <option value="Question sur un produit">Question sur un produit</option>
+    <option value="Reclamation">reclamation</option>
+    <option value="Autres">Autres</option>
+</select><br>
+                <label for="question">Votre question*: </label>
+                <textarea name="question" rows="2" cols="20" required></textarea>
+                <!--textarea (création d'une zone de saisie multiligne),
+                rows( nombre de ligne dans la zone de saise),
+                cols(nombre de caractere par ligne ds la zone de saisie)-->
+            </fieldset>
+            <br>
+            <input type="checkbox">* J'accepte le traitement informatique de ce formulaire<br>
+            <!--création d'un champ de saisie de type case à cocher-->
+            <br>
+            <input type="submit" value="Envoyer">&nbsp<input type="reset" name="nom" value="Annuler">
+            <!--Création d'un bouton pour envoyer le formulaire et un autre pour reinitialiser le formulaire en cas d'annulation-->
+            <br>
+        </form>
+        <!--fin du formulaire-->
+    </section>
+    <hr>
+    <footer>
+        <ul>
+            <li><a href="mentionslegal.html">Mentions légales</a></li>
+            <li><a href="horaires">Horaires</a></li>
+            <li><a href="plandusite">Plan du site</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

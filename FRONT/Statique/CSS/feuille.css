@@ -1,0 +1,184 @@
+/* Style a appliquer  lorsque la largeur de la page est au dessus de 768 px*/
+
+html {
+    font-size: 100%;
+    /*définit la taille du texte pour le responsive*/
+}
+
+.entete {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0px;
+    /*Dans le conteneur entete les elements doivent s'afficher en ligne ,
+    s'adapter pour toujours prendre la totalité de la page,
+     la marge basse de l'entete est de 0 px*/
+}
+
+.logo {
+    width: 30vw;
+    height: 9vw;
+    /*définit la largeur et la longueur du logo*/
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    /*conteneur flexible
+    le slogan doit etre au centre de la page
+    et on definit la taille du texte a 2.4rem*/
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    justify-content: center;
+    /*Le conteneur est flexible et ses elements doivent être alignés,
+    le fond doit etre noir,et les elements sont centrés sur la page*/
+}
+
+.pied {
+    display: flex;
+    flex-direction: row;
+    background: black;
+    justify-content: center;
+    width: 100%;
+    /*pour le pied de page*/
+}
+
+a {
+    color: white;
+    /*les liens html seront ecris en blanc*/
+}
+
+.promo {
+    width: 100%;
+    /*pour l'image promotion*/
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*pour les sections*/
+}
+
+.texte {
+    width: 70%;
+    margin-right: 0px;
+    margin-top: 0%;
+    /* Le texte doit prendre 70% de la largeur de la page sans marge a droite et au dessus*/
+}
+
+aside {
+    background-color: grey;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    /* Le fond doit etre gris,conteneur flexible dont les elements sont alignés ,
+   prend les 30% restant de la page*/
+}
+
+.formulaire {
+    font-size: 2rem;
+    /*pour le formulaire*/
+}
+
+.tableau {
+    font-size: 1.5rem;
+    width: 100%
+    /*pour le tableau*/
+}
+
+h1 {
+    font-size: 2rem;
+    /*pour les titres de niveau 1*/
+}
+
+h4 {
+    font-size: 1.5rem;
+    /*pour les titres de niveau 4*/
+}
+
+p {
+    font-size: 1rem;
+    /*pour les paragraphes*/
+}
+
+li {
+    font-size: 1rem;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    /*pour les diffentes puces des listes,
+    padding( marge interieure d'un element)*/
+}
+
+#photos {
+    width: 200px;
+    /*pour les differentes photos avec un id="photos"*/
+}
+
+@media screen and (max-width:768px) {
+    /*style a appliquer en dessous d'une largeur de 768 px*/
+    aside {
+        display: none;
+    }
+    .conteneur {
+        width: screen;
+    }
+    .entete {
+        width: 100%;
+    }
+    .logo {
+        width: 50vw;
+        height: 15vw;
+        margin-bottom: 0px;
+    }
+    .slogan {
+        font-size: 2.3rem;
+        width: 50%;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        background: black;
+    }
+    .pied {
+        width: content;
+        background: black;
+    }
+    a {
+        color: white;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #promo {
+        width: 100%;
+        margin-bottom: 0%;
+    }
+    .texte {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 0%;
+    }
+    h1 {
+        font-size: 3.3rem;
+    }
+    h4 {
+        font-size: 2.3rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    li {
+        font-size: 1.8rem;
+    }
+    #photo {
+        width: 100%;
+    }
+}
