@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--indique au navigateur web la version du langage(code) de balisage utilisé sur cette page-->
+<html lang="fr">
+<!--indique le langage(courant) utilisé-->
+
+<head>
+    <!--non visible par l'utilisateur ,la partie head fournit des informations générales sur le document comme son titre, les liens vers les feuilles de styles utilisées etc...-->
+    <meta charset="utf-8">
+    <!--declare le type d'encodage souhaité pour le document html-->
+    <meta name="description" content="Accueil,tableau comparatif et formulaire de contact jarditou">
+    <!--texte non visible dans le navigateur mmais qui sera reris dans les resultats de recherche du moteur.-->
+    <title>Accueil</title>
+    <!--titre de la page, il sera visible sur l'onglet.-->
+    <link rel="stylesheet" href="feuille.css">
+    <!--pour importer une feuille de style css sur la page html-->
+</head>
+<!--fin de la balise head-->
+
+<body>
+    <!--debut de la balise body indique au navigateur ou commence le corps de page (partie visible) et ou il se termine-->
+    <header>
+        <!--indique l'entete de la page ,on y met en general le logo de la page-->
+        <img src="image/logojarditou.jpg" alt="logo jarditou" title="logo jarditou" style="width: 200px;height:125px">
+        <!--src(Insertion d'une image dont la source est le dossier image) ,
+            alt (permet d'integrer un texte de remplacement au cas ou l'image ne chargerait pas),
+            title(donne un titre a l'image ,il est utile pour le referencement et les syntheses vocales),
+            style (permet de determiner les dimensions de l'image en l'occurence)-->
+        <h2>Tout le jardin</h2>
+        <!--Titre hierarchique de niveau 2 -->
+
+    </header>
+    <!--Fin de l'entete-->
+    <nav>
+        <!--indique un bloc de navigation (menu)-->
+        <p>La qualité depuis 70 ans</p>
+        <!--indique un paragraphe de texte-->
+        <ul>
+            <!--Cette balise permet de definir une liste dans laquelle chaque element est precede d'une puce.-->
+            <li>
+                <!--est utilisé pour représenter un élément dans une liste-->
+                <a href="accueil.html" title="Acceder à l'accueil">Accueil</a>
+                <!--a (permet d'établir un lien hypertexte), href ( valeur la destination du lien ),
+                    title(texte indicatif qui s'affiche lorsque l'on passe la souris sur le lien),
+                    >xxxxxxx</a>(texte, qui est affiché sur la page web) -->
+            </li>
+            <li><a href="tableau.html" title="Acceder au tableau">Tableau</a></li>
+            <li><a href="contact.html" title="Acceder au formulaire de contact">Contact</a></li>
+        </ul>
+        <!--Fin de la liste-->
+    </nav>
+    <!--fin du bloc de navigation-->
+    <img src="image/promotion.jpg" alt="promotion en cours" title="promotion en cours">
+    <div>
+        <!--conteneur générique qui permet d'organiser le contenu sans représenter quoi que ce soit d’un point de vue sémantique-->
+        <h1>Accueil</h1>
+        <!--Titre hierarchique de niveau 1-->
+        <hr>
+        <!--ligne de division horizontale-->
+        <section>
+            <!-- indique une section de contenu-->
+            <article>
+                <!--indique le debut d'un article-->
+                <h4>L'entreprise</h4>
+                <!--Titre hierarchique de niveau 4-->
+                <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+            </article>
+            <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
+            <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie </p>
+
+        </Section>
+        <!--fin de la premiere section-->
+        <section>
+            <article>
+                <h4>Qualité</h4>
+                <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+                <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+            </article>
+            <article>
+                <h4>Devis gratuit</h4>
+                <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+            </article>
+            <aside>[COLONNE DE DROITE]</aside>
+            <!--se positionne sur le cote d’un article pour indiquer un complement de texte se rapportant directement à l'article-->
+
+    </div>
+    <!--fin de la balise div (division)-->
+
+    </section>
+    <hr>
+
+    <footer>
+        <!--indique le pied de page-->
+
+        <ul>
+            <li><a href="mentionslegal.html">Mentions légales</a></li>
+            <li><a href="horaires">Horaires</a></li>
+            <li><a href="plandusite">Plan du site</a></li>
+        </ul>
+    </footer>
+    <!--Fin du pied de page-->
+
+</body>
+<!--Fin de la balise body-->
+
+</html>
+<!-- fin de la page html-->
